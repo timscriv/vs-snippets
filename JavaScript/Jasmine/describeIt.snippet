@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>describeIt</Title>
+      <Author>Tim Scrivner</Author>
+      <Description>Describe and It function blocks for Jasmine tests</Description>
+      <Shortcut>describeit</Shortcut>
+    </Header>
+    <Snippet>
+        <Declarations>
+        <Literal>
+            <ID>id</ID>
+            <ToolTip>Replace with what you are describing</ToolTip>
+            <Default>specName</Default>
+        </Literal>
+        <Literal>
+            <ID>should</ID>
+            <ToolTip>Should do what....</ToolTip>
+            <Default>should</Default>
+        </Literal>
+        <Literal>
+            <ID>do</ID>
+            <ToolTip>The Expectation</ToolTip>
+            <Default>pending(); //TODO: AAA goes here</Default>
+        </Literal>
+        </Declarations>    
+      <Code Language="javascript">
+        <![CDATA[
+        describe('$id$', function (){
+            it('$should$', function () {
+                //Arrange
+                $do$$end$
+                //Act
+                //Assert
+            });
+        });
+        
+        ]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
