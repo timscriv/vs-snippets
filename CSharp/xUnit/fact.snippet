@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>fact</Title>
+      <Author>Tim Scrivner</Author>
+      <Description>Creates a simple fact for testing in xunit</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>fact</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>Method_StateUnderTest_ExpectedBehavior</ID>
+          <ToolTip>Withdraw_InvalidAccount_ShouldThrowException</ToolTip>
+          <Default>Method_StateUnderTest_ExpectedBehavior</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>do</ID>
+          <ToolTip>The Expectation</ToolTip>
+          <Default>throw new NotImplementedException();</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[        [Fact]
+        public void $Method_StateUnderTest_ExpectedBehavior$()
+        {
+            //Arrange
+            $do$$end$
+            //Act
+            //Assert
+        }]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
